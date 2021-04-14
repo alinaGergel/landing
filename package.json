@@ -1,0 +1,22 @@
+{
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alinaGergel/landing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alinaGergel/landing/issues"
+  },
+  "homepage": "https://github.com/alinaGergel/landing#readme"
+}
