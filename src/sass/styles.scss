@@ -64,10 +64,8 @@ body {
   background-color: transparent;
   border: none;
   outline: none;
-}
 
-.cart:focus {
-  outline: none;
+  &:focus { outline: none;}
 }
 
 .cart-count {
