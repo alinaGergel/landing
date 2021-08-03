@@ -92,7 +92,7 @@ function scriptsVendors() {
 
 function htmls() {
 
-  return gulp.src(paths.src + 'templates/*.html')
+  return gulp.src(paths.src + '*.html')
     .pipe(plumber())
     .pipe(gulp.dest(paths.build));
 }
@@ -112,7 +112,7 @@ function clean() {
 function watch() {
   gulp.watch(paths.src + 'sass/**/*', styles);
   gulp.watch(paths.src + 'js/*.js', scripts);
-  gulp.watch(paths.src + 'templates/**/*.html', htmls);
+  gulp.watch(paths.src + '*.html', htmls);
  // gulp.watch(paths.src + 'img/svg/*', svgSprite)
 }
 
