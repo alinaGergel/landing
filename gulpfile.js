@@ -29,7 +29,7 @@ const paths =  {
 };
 
 function styles() {
-  return gulp.src([paths.src + 'sass/styles.scss']) //, paths.src + 'sass/style.css'
+  return gulp.src([paths.src + 'sass/index.scss']) //, paths.src + 'sass/style.css'
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sassGlob())

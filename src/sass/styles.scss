@@ -2,6 +2,12 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+@for $i from 2 to 5{
+  .has-columns-#{$i}{
+    grid-template-columns: repeat($i, 1fr);
+  }
+}
+
 .page {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -50,6 +56,9 @@ body {
 
 .nav-link {
   color: #212121;
+  font-weight: 700;
+  @include textGradient(linear-gradient(red, yellow, blue));
+
   text-decoration: none;
 }
 
@@ -169,10 +178,10 @@ body {
   font-size: 30px;
   text-transform: uppercase;
   font-weight: 400;
-}
 
-.notice-title span {
-  font-weight: 700;
+  span {
+    font-weight: 700;
+  }
 }
 
 .notice-description {
